@@ -1,0 +1,547 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    border: 0;
+}
+
+body {
+    font-size: 16px;
+}
+
+
+p {
+    font-size: 16px;
+    font-family: 'IBM Plex Mono', monospace;
+    color: #060A24;
+    letter-spacing: 0;
+    line-height: 1.5rem;
+}
+
+h1 {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 4rem;
+    line-height: 42px;
+    letter-spacing: 0;
+    color: #060A24;
+    font-weight: 400;
+}
+
+
+h1::after {
+    content: ".";
+}
+
+h2 {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 48px;
+    letter-spacing: 0;
+    margin-left: 13%;
+    line-height: 42px;
+    font-weight: 400;
+}
+
+h2.white {
+    color: #FFFFFF;
+}
+
+.text-mobile {
+    display: none;
+}
+
+
+.skew-section {
+    background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+    transform: skew(0deg, -5deg);
+    overflow: hidden;
+}
+
+.skew-content {
+    transform: skew(0deg, 5deg);
+}
+
+.button {
+    background-color:#00F3BB;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+
+.button a {
+    display: block;
+    padding: 1rem 3.69rem;
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 500;
+    font-size: 18px;
+    color: #060A24;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 1.5rem;
+    text-decoration: none; 
+}
+
+.button a:hover {
+    background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
+    color: #FFF;
+}
+
+.nav-container {
+    height: 5rem;
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-container img {
+    width: 2rem;
+    height: auto;
+}
+
+.nav-container .nav-links {
+    display: flex;
+}
+
+.nav-container .nav-links a {
+    color: #060A24;
+    text-decoration: none;
+    margin-left: 3rem;
+    font-family: 'IBM Plex Mono';
+    font-size: 1rem;
+}
+
+.nav-container .nav-links a:hover {
+    color: #00F3BB;
+    font-weight: 500;
+    text-decoration: line-through;
+}
+
+.nav-container .nav-links a:active {
+    color: rgba(6, 10, 36, 0.56);
+    text-decoration: line-through;
+}
+
+.nav-container a:visited {
+    color: #060A24;
+}
+
+
+.show-menu-btn,
+.hide-menu-btn {
+    display: none;
+}
+
+#chk {
+    display: none;
+}
+
+
+#showcase {
+    width: 70%;
+    margin: auto;
+    margin-top: 7.5rem;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+#showcase .line-through {
+    text-decoration: line-through;
+}
+
+#showcase .web-info {
+    width: 628px;
+    height: 48px;
+}
+
+#showcase .button {
+    margin-top: 3.5rem;
+}
+
+#episodios {
+    margin-top: 5rem;
+}
+
+#episodios .episodios-container {
+    padding: 10rem 0;
+}
+
+#episodios .iframes-container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 1.3rem;
+}
+
+#episodios .iframes-container .single-iframe-container {
+    margin: 20px 0;
+    box-sizing: border-box;
+    width: 45%;
+}
+
+#episodios .iframes-container .single-iframe-container iframe {
+    width: 100%;
+    height: 232px;
+    border: 0px;
+    background-color: transparent;
+}
+
+
+#nosotros {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+#nosotros .phone-container {
+    width: 50%;
+    text-align: center;
+    
+}
+
+#nosotros .phone-container .phone-img {
+    width: 30vw;
+    position: relative;
+    bottom: 8rem;
+}
+
+#nosotros .aside {
+    width: 40%;
+    margin-top: 10vw;
+}
+
+#nosotros .aside p {
+    margin-top: 1.5rem;
+}
+
+#nosotros .aside h2 {
+    margin-left: 0;
+}
+
+
+#entrevistas h2 {
+    color: #060A24;
+}
+
+#entrevistas .photos {
+    display: flex;
+    margin-top: 2.25rem;
+    flex-wrap: wrap;
+}
+
+#entrevistas .photos img {
+    width: 33.33%;
+}
+
+#topicos {
+    margin-top: 4rem;
+}
+
+
+#topicos .topicos-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 4.3rem;
+}
+
+#topicos .single-topic-container {
+    text-align: center;
+    width: 70%;
+}
+
+#topicos .single-topic-container img {
+    width: 104px;
+    height: 104px;
+}
+
+#topicos h3 {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 29px;
+    text-align: center;
+    color: #060A24;
+}
+
+#novedades { 
+    margin-top: 7rem;
+    margin-bottom: -6rem;
+}
+
+#novedades h2 {
+    margin-left: 0;
+    
+}
+
+#novedades .novedades-container {
+    padding-top: 10rem;
+    padding-bottom: 15rem;
+    align-items: center;
+    text-align: center; 
+}
+
+#novedades .button {
+    margin-top: 2.25rem;
+}
+
+
+footer {
+    background-color: #FFFFFF;
+    height: 5rem;
+    bottom: 2.5rem;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+@media (max-width: 1366px) {
+
+    html {
+        font-size: 14px;
+    }
+
+    #nosotros {
+        width: 90%;
+    }
+
+    #nosotros .aside {
+        width: 45%;
+        margin-top: 7vw;
+    }
+
+
+  h1::after {
+          color: #0000EC;
+        }
+
+}
+
+
+@media (max-width: 1024px) {
+
+    html {
+        font-size: 12px;
+    }
+
+    #nosotros {
+        width: 95%;
+    }
+
+    #nosotros .aside {
+        width: 45%;
+        margin-top: 5vw;
+    }
+    
+}
+
+@media (max-width: 720px) {
+
+    html {
+        font-size: 12px;
+    }
+
+    h1{
+        font-size: 36px; 
+    }
+
+    h1::after {
+        color: #060A24;
+      }
+
+    p {
+        font-size: 1.12rem;
+    }
+
+    h2 {
+        margin-left: 5%;
+    }
+
+    .nav-container,
+    #showcase {
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    .button {
+        width: 100%;
+    }
+    
+    .button a {
+        padding: 1rem 0;
+        width: 100%;
+    }
+
+
+    .nav-container.header {
+        height: 3.5rem;
+    }
+
+    .nav-container.header .nav-links {
+        position: absolute;
+        background: #0000EC;
+        top: 3.5rem;
+        left: 0;
+        width: 100%;
+        padding: 0 5%;
+        display: none;
+    }
+
+    .nav-container.header .nav-links a {
+        display: block;
+        margin: 2rem 0;
+        text-decoration: none;
+        color: #FFFFFF;
+    }
+
+    .show-menu-btn {
+        display: block;
+    }
+
+    .hide-menu-btn {
+        display: none;
+    }
+
+    .show-menu-btn,
+    .hide-menu-btn {
+        font-size: 1.7rem;
+    }
+
+    #chk:checked ~ .nav-links {
+        display: block;
+    }
+
+    #chk:checked~.show-menu-btn {
+        display: none;
+    }
+
+    #chk:checked~.hide-menu-btn {
+        display: block;
+    }
+
+    #showcase {
+        margin-top: 29px;
+    }
+
+     #showcase .web-info {
+         width: 100%;
+     }
+
+     .web-info{
+        display: none; 
+     }
+
+     .text-mobile{
+        font-size: 14px;
+        letter-spacing: 0;
+        display: block;
+        line-height: 22px;
+        height: 66px;
+       width: 288px;
+     }
+
+
+     #episodios .episodios-container {
+         padding: 5rem 0;
+     }
+
+     #episodios .iframes-container {
+         width: 95%;
+         margin-top: 1.75rem;
+     }
+
+     #episodios .iframes-container .single-iframe-container {
+        margin: 10px 0;
+        width: 100%;
+     }
+
+     #nosotros {
+         width: 100%;
+         display: block;
+     }
+
+     #nosotros .phone-container {
+         width: 100%;
+     }
+
+     #nosotros .phone-container .phone-img {
+         width: 100%;
+         bottom: 4rem;
+     }
+
+     #nosotros .aside {
+         width: 90%;
+         margin: 0 auto;
+         margin-top: 0;
+     }
+
+     
+     #entrevistas {
+         margin-top: 4.5rem;
+     }
+
+     #entrevistas .photos img {
+         width: 100%;
+         height: auto;
+     }
+
+     #topicos .topicos-container {
+         display: block;
+         margin-top: 0;
+     }
+
+     #topicos .single-topic-container {
+         text-align: center;
+         width: 100%;
+         margin-top: 6rem;
+     }
+
+     #topicos .single-topic-container img {
+         width: 40%;
+     }
+
+     #topicos h3 {
+         font-size: 2rem;
+         margin-top: 1rem;
+     }
+
+    
+     #novedades h2 {
+        margin-left: 0;
+        font-weight: 400;
+     }
+
+     #novedades .novedades-container {
+         width: 90%;
+         margin: 0 auto;
+         padding-top: 5rem;
+         padding-bottom: 11rem;
+         align-items: center;
+         text-align: center;
+     }
+
+     #novedades .button {
+         margin-top: 2.25rem;
+     }
+
+     footer {
+         padding: 1rem 0;
+     }
+
+     .nav-container.footer {
+        flex-direction: column;
+        justify-content: space-around;
+     }
+
+     .nav-container.footer .nav-links a {
+         margin: 0 20px;
+         font-size: 16px;
+     }
+
+}
